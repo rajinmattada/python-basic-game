@@ -76,6 +76,8 @@ def validate_user():
 
 
 ##### pgm starts here
+
+print "This is a word game, You have to arrange the letters to make a meaning full word"
 db="/tmp/mine.db"
 userlist=[]
 words=[]
@@ -95,7 +97,6 @@ while user.total_coin > 0:
 	temp=list(word)
 	random.shuffle(temp)
 
-	print_string(word)
 	l = len(word)
 	if len(word) > 7:
 		chances =7
